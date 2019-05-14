@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<link href = "dom.css" rel = "stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
+<title>Javascript Learn Dom</title>
+</head>
+<body>
+<div id = "wrapper">
+    <header>
+        <div id = "page-banner">
+            <h1 class = "title">Lamar Library</h1>
+            <p>Book for Ninjas</p>
+            <form id = "search-books">
+                <input type = "text" placeholder = "search books"/>
+            </form>
+        </div>
+    </header>
+    <div id = "book-list">
+        <h2 class = "title">Books to Read</h2>
+        <a href = "https://www.youtube.com/watch?v=ndz6iH6o1ms&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=9">Source click</a>
+        <ul>
+            <li>
+                <span class = "name">Name of the Wind</span>
+                <span class = "delete">delete</span>
+            </li>
+            <li>
+                <span class = "name">The Wise Man's Fear</span>
+                <span class = "delete">delete</span>
+            </li>
+            <li>
+                <span class = "name">Kafka on the shore</span>
+                <span class = "delete">delete</span>
+            </li>
+            <li>
+                <span class = "name">The Master and the Magarita</span>
+                <span class = "delete">delete</span>
+            </li>
+        </ul>
+    </div>      
+    <form id = "add-book">
+        <input type = "checkbox" id = "hide"/>
+        <label for = "hide">Hide all books</label>
+        <input type = "text" placeholder = "Add a book..."/>
+        <button class = "button">Add Book</button>
+    </form>
+        <div id = "tabbed-content">
+                <ul class = "tabs">
+                     <li data-target = "#about" class = "active">About</li>
+                     <li data-target = "#contact">Contact</li>   
+                </ul>
+            <div class ="panel active" id = "about">
+                <p>About the tabs...</p>
+                <p>Pronunciation as comes about due to difficulty pronouncing the cluster. Some people have enough difficulty with this word that it comes out as homophonous</p>
+            </div>
+            <div class = "panel" id = "contact">
+                <p>Contact for the tabs2...</p>
+                <p>DOM as “a platform- and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of documents.” What this means for you is that you can work with a specification to which web browsers adhere to develop a webpage in a dynamic manner.</p>
+            </div>
+        </div>
+</div>
+
+<script type = "text/Javascript" src = "dom.js"></script>
+</body>
+</html>
